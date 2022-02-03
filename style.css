@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins";
+}
+
+@media only screen and (max-width: 80em) {
+        html {
+            font-size: 45.25%; 
+            -webkit-text-size-adjust: none;
+            
+        }
+    }
+
+    @media only screen and (max-width: 62.625em) {
+        html {
+            font-size: 40.25%; 
+            -webkit-text-size-adjust: none;
+        }
+    }
+
+    
+    @media only screen and (max-width: 56.25em) {
+        html {
+            font-size: 38%;
+            -webkit-text-size-adjust: none;
+        }
+    }
+
+    @media only screen and (max-width: 30.25em) {
+        html {
+            font-size: 30%;
+            -webkit-text-size-adjust: none;
+        }
+    }
+    
+    @media only screen and (max-width: 23.43em) {
+        html {
+            font-size: 28.25%; 
+            -webkit-text-size-adjust: none;
+        }
+    }
+
+.container {
+    max-width: 140em;
+    margin: auto;
+}
+
+@media only screen and (max-width: 50.26em) {
+    .container {
+        padding: 2rem;
+    }
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+.header {
+    padding: 10rem 0 12rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: end;
+    column-gap: 5rem;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    column-gap: 7rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 23.43em) {
+        nav {
+        display: flex;
+        justify-content: center;
+    }
+
+        nav > ul {
+        font-size: 2rem;
+    }
+}
+
+.nav-image > img{
+    height: 7rem;
+    width: 7rem;
+    background-color: #ccc;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+
+
+.main {
+    padding: 5rem auto 3rem;
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+.main-top-left > h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 62.625em) {
+        .main-top {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-top-left {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .main-bottom {
+            flex-direction: column;
+            align-items: center;            
+        }
+}
+
+.main-top-left > p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ccc;
+}
+
+.main-top-right {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pay-images {
+    display: flex;
+    column-gap: 3rem;
+    width: 100%;
+}
+
+
+.pay-images > .card {
+    border-radius: 3px;
+    background-color: rgb(92, 92, 191);
+    align-self: center;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.main-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.credit-card {
+    width: 50rem;
+    border-radius: 5px;
+    padding: 3rem;
+    font-size: 1.8rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.cc-image{
+    width: 100%;
+}
+
+.cc-image > img{
+    width: 35%;
+}
+
+@media only screen and (max-width: 56.25em) {
+        .cc-image > img{
+            width: 25%;
+        }     
+    }
+
+.credit-card-details > *{
+    margin-bottom: 1rem;
+}
+
+.cir {
+    display: flex;
+}
+.red-cir {
+    width: 7rem;
+    height: 7rem;
+    background: red;
+    border-radius: 50px;
+}
+
+.yellow-cir {
+    width: 7rem;
+    height: 7rem;
+    background: rgba(218, 165, 32, 0.905);
+    border-radius: 50px;
+    transform: translate(-2rem);
+}
+
+.form-top, .form-bottom {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+@media only screen and (max-width: 23.43em) {
+    .form-group {
+        margin: 0 1.5rem;
+    }
+}
+
+.form-group > input {
+    width: 30rem;
+    padding: 2rem 2rem;
+    outline: none;
+    background: rgb(248, 248, 248);
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 3px;
+}
+
+label {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 600;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 600;
+}
+
+
+.btn {
+    background: #4158D0;
+    width: 95%;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-control-radio {
+    margin: 3rem;
+}
+
+.pay-details-items {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.complete-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.comp-pay-text {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.btn-complete {
+    margin-left: 0;
+}
