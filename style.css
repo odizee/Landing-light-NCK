@@ -89,6 +89,8 @@ nav > ul {
         nav {
         display: flex;
         justify-content: center;
+        margin-right: auto;
+
     }
 
         nav > ul {
@@ -235,7 +237,7 @@ nav > ul {
     margin-left: 3rem;
 }
 
-@media only screen and (max-width: 23.43em) {
+@media only screen and (max-width: 30.425em) {
     .form-group {
         margin: 0 1.5rem;
     }
