@@ -274,7 +274,7 @@ label {
     background: #4158D0;
     width: 95%;
     margin-left: 3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 2rem 2rem;
     color: #fff;
     font-size: 2rem;
@@ -286,6 +286,20 @@ label {
 
 .form-control-radio {
     margin: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-control-radio > input {
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 30.425em) {
+    .form-control-radio, .btn {
+        margin: 1rem 1.5rem;
+    }
+
+
 }
 
 .pay-details-items {
